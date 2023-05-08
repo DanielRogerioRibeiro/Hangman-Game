@@ -27,10 +27,17 @@ def jogar():
                     letras_acertadas[index] = letra
                 index = index + 1
         else:
-            erros = erros + 1 
+            erros += 1 
+        
+        enforcou = erros == 10
         print(letras_acertadas)
 
     print("Fim do jogo")
 
+
 if(__name__ == "__main__"):
     jogar()
+
+
+
+#Checking the number of attempts.
