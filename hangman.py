@@ -22,10 +22,11 @@ def jogar():
 
         
         if (chute in palavra_secreta):
+            index = 0
             for letra in palavra_secreta:
                 if(chute.upper() == letra.upper()):
                     letras_acertadas[index] = letra
-                index = index + 1
+                index += 1
         else:
             erros += 1 
         
@@ -39,5 +40,3 @@ if(__name__ == "__main__"):
     jogar()
 
 
-
-#Checking the number of attempts.
