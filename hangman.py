@@ -6,7 +6,7 @@ def jogar():
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    palavra_secreta = "mulher"
+    palavra_secreta = "mulher".upper()
     letras_acertadas = ["_", "_", "_", "_", "_", "_"]
 
     enforcou = False
@@ -18,7 +18,7 @@ def jogar():
     while(not enforcou and not acertou):
 
         chute = input("Qual letra? ")
-        chute = chute.strip()
+        chute = chute.strip().upper()
 
         
         if (chute in palavra_secreta):
@@ -40,3 +40,4 @@ if(__name__ == "__main__"):
     jogar()
 
 
+#modulo 5 - Palavra secreta e chute sempre em caixa alta
